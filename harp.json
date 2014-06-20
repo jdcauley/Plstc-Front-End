@@ -1,8 +1,8 @@
 {
   "domains": [""],
   "globals": {
-    "site_title": "Fifth Letter",
-    "twitter": "@HarpPlatform",
+    "site_title": "Plastic",
+    "twitter": "@useplastic",
     "site_url": "http://localhost:9000",
     "disqus": {
       "show": false,

@@ -661,3 +661,39 @@ setTimeout(function() {
 setTimeout(function() {
   $('#btn-action').addClass('btn-action-final');
 }, 4000);
+/*
+$(function() {
+  'use strict';
+  var target = '#scroll';
+
+  var position = $(window).scrollTop();
+
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if(scroll > 400) {
+      console.log('up');
+      $(target).addClass('scroll-bg').removeClass('no-scroll-bg');
+    } else {
+      console.log('down');
+      $(target).addClass('no-scroll-bg').removeClass('scroll-bg');
+    }
+  });
+});
+*/
+$(function bootstrapHeadSpace() {
+  'use strict';
+  var target = '#scroll';
+  var position = $(window).scrollTop();
+
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if(scroll > 150) {
+      console.log('up');
+      $(target).addClass('up').removeClass('down');
+    } else {
+      console.log('down');
+      $(target).addClass('down').removeClass('up');
+    }
+    position = scroll;
+  });
+});

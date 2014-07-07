@@ -5,61 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plastic</title>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,200|Roboto:200,400,300,500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://gcwp.co/plstc/assets/css/app.css">
+    <link rel="stylesheet" href="http://gcwp.co/plstc//assets/css/app.css">
     <link rel="alternate" type="application/rss+xml" title="Plastic RSS" href="/rss.xml">
 
   </head>
-  <body class="page=index payment-page">
+  <body class="page-index">
 
 
-    
-<section class="payments">
-  <div class="payment payment-form-container">
-    <img class="logo" src="/assets/img/Twitpic.jpg">
-    <form class="payment payment-form" action="mailto:jordan@cauley.co" method="post">
-      <div class="payment payment-input-wrapper">
-        <input id="amount" class="payment payment-input amount" pattern="[\$0-9\.\0-9]*" type="currency" name="" value="" placeholder="Amount" required>
-      </div>
-      <div class="payment payment-input-wrapper">
-        <input id="name" class="payment payment-input name" type="text" name="" value="" placeholder="Full Name" required>
-      </div>
-        <div class="payment payment-input-wrapper">
-      <input id="email" class="payment payment-input email" pattern="[^ @]*@[^ @]*" type="text" name="" value="" placeholder="Email" required>
+    <div id="scroll" class="scroll"></div>
+<nav class="main-nav" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"><h3>Plastic</h3></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+      <ul class="nav navbar-nav">
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+<main class="home main">
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="container">
+        <div class="lead-copy">
+          <span id="everyday" class="everyday">Make Every Day,</span> <span id="payday" class="payday">a Payday</span>
         </div>
-      <div class="payment payment-input-wrapper">
-        <input id="card" class="payment payment-input card cc-number" x-autocompletetype="cc-number" type="text" name="" value="" placeholder="Card Number" required>
-      </div>
-        <div class="payment payment-input-wrapper">
-      <input id="date" class="payment payment-input date cc-exp" x-autocompletetype="cc-exp" placeholder="Expires MM/YY" type="text" name="" value="" required>
+        <div class="mobile-copy">
+          <h1>Make Every Day, <span>A Payday</span></h1>
         </div>
-      <div class="payment payment-input-wrapper">
-        <input id="cvc" class="payment payment-input cvc cc-cvc" x-autocompletetype="cc-csc" type="text" name="" value="" placeholder="CVC" required>
+        <div class="btn-container">
+          <a id="btn-action" class="btn-hero btn-action" href="#">Get Started</a>
+        </div>
       </div>
-      <div class="payment payment-input-wrapper">
-        <input id="btn" class="payment payment-input btn btn-default" type="submit" value="Submit" required>
+    </div>
+  </section>
+  <section class="intro">
+    <div class="container">
+      <div class="payment payment-form-container">
+        <img class="logo" src="http://gcwp.co/plstc//assets/img/Twitpic.jpg">
+        <form class="payment payment-form" action="mailto:jordan@cauley.co" method="post">
+          <div class="payment payment-input-wrapper">
+            <input id="amount" class="payment payment-input amount" pattern="[\$0-9\.\0-9]*" type="currency" name="" value="" placeholder="Amount" required>
+          </div>
+          <div class="payment payment-input-wrapper">
+            <input id="name" class="payment payment-input name" type="text" name="" value="" placeholder="Full Name" required>
+          </div>
+          <div class="payment payment-input-wrapper">
+            <input id="email" class="payment payment-input email" pattern="[^ @]*@[^ @]*" type="text" name="" value="" placeholder="Email" required>
+          </div>
+          <div class="payment payment-input-wrapper">
+            <input id="card" class="payment payment-input card cc-number" x-autocompletetype="cc-number" type="text" name="" value="" placeholder="Card Number" required>
+          </div>
+          <div class="payment payment-input-wrapper">
+            <input id="date" class="payment payment-input date cc-exp" x-autocompletetype="cc-exp" placeholder="Expires MM/YY" type="text" name="" value="" required>
+          </div>
+          <div class="payment payment-input-wrapper">
+            <input id="cvc" class="payment payment-input cvc cc-cvc" x-autocompletetype="cc-csc" type="text" name="" value="" placeholder="CVC" required>
+          </div>
+          <div class="payment payment-input-wrapper">
+            <input id="btn" class="payment payment-input btn btn-default" type="submit" value="Submit" required>
+          </div>
+        </form>
       </div>
-    </form>
+      <div class="copy">
+        <header>
+          <h2>Better ways to get paid</h2>
+        </header>
+        <p>There is no reason to type in a credit card on every invoice. Users create an account that can be used with any Plastic checkout.</p>
+        <p>We make it easy to pay as a guest, login and pay with one-click or even authorize payment right from their email.</p>
+        <p>Make paying you, the easiest part of their day.</p>
+
+      </div>
+    </div>
+  </section>
+  <section class="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5">
+          <h1 class="super-size"><span>$</span>5</h1>
+          <h5>per Month + Stripe Fees*</h5>
+        </div>
+        <div class="col-sm-2">
+          <h3 class="or">or</h3>
+        </div>
+        <div class="col-sm-5">
+          <h1 class="super-size">5<span>%</span></h1>
+          <h5>Stripe Fees + Plastic Fees</h5>
+        </div>
+      </div>
+      <div>
+        <div class="col-lg-12">
+          <h1 class="price">Pick your Price</h1>
+          <h4>Both plans come with all of these features</h4>
+          <hr>
+          <ul class="feature-list">
+            <li>Set a Price or Take Donations</li>
+            <li>Support for Political Campaign</li>
+            <li>Custom CSS for Payments Pages</li>
+            <li>Set the Submission Redirect</li>
+            <li>Simple Webhooks</li>
+            <li>Client Account Creation to Simplify Checkout</li>
+            <li>Create New Payment Forms via Email</li>
+            <li>Pay from your inbox</li>
+            <li><img class="poweredbystripe" src="http://gcwp.co/plstc//assets/img/outline.png"></li>
+          </ul>
+        </div>
+      </div>
+        <div class="asterisk">
+          <p class="small">Stripe Fee is 2.9% + 25&cent; | Plastic fee is 2.1%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <a href="#">Footer Link</a>
+      </div>
+    </div>
   </div>
-  <article class="payment payment-info">
-    <header>
-      <h1>Web Development</h1>
-      <h4>Deposit for Web Development Services</h4>
-    </header>
-    <ul>
-      <li>Responsive Site Build: $3000</li>
-      <li>Quality Assurance Testing: $600</li>
-      <li>Support of Online Payments: $1000</li>
-      <li>Total: $4600</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
-    <p>Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.</p>
-  </article>
-</section>
+</footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
-    <script src="http://gcwp.co/plstc/assets/js/transit.js"></script>
-    <script src="http://gcwp.co/plstc/assets/js/app.js"></script>
+    <script src="http://gcwp.co/plstc//assets/js/transit.js"></script>
+    <script src="http://gcwp.co/plstc//assets/js/app.js"></script>
 
 
   </body>

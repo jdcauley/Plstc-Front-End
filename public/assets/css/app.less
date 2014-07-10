@@ -194,7 +194,22 @@ ul{
   }
   .visible-xs;
 }
-
+.form-error, .form-success{
+  position: absolute;
+  bottom: 220px;
+  left: 100px;
+  width: 500px;
+  font-size: 24px;
+  font-weight: 200;
+  opacity: 0;
+  z-index: -1;
+  transition: all 1.2s ease;
+  &.show{
+    bottom: 160px;
+    opacity: 1;
+    z-index: 1;
+  }
+}
 .btn-action{
   position: absolute;
   bottom: 160px;
@@ -305,9 +320,20 @@ ul{
   text-align: center;
 }
 .price{
-  padding-top: 40px;
+  font-size: 60px;
+}
+.features{
+  color: @white;
+  font-weight: 200;
+  h1{
+    text-align: center;
+  }
+  h4{
+    text-align: center;
+  }
 }
 .feature-list{
+  text-align: center;
   list-style-type: none;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -448,25 +474,11 @@ ul{
     }
   }
 }
-.interest-modal{
-  margin-top: 50px;
-}
-.interest-form{
-  position: relative;
-  display: block;
-  height: auto;
-  width: 100%;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1px;
-  padding-bottom: 40px;
-  margin-bottom: 30px;
-  background: @white;
-  border-radius: 0;
-}
+
 footer{
-  padding: 40px 0;
+  color: darken(@white, 50%);
+  margin-top: 40px;
+  padding-top: 20px;
   a{
     color: @white;
     &:hover{
@@ -482,7 +494,15 @@ footer{
       color: darken(@white, 30%);
     }
   }
+  .container{
+    padding: 20px 0 10px;
+    border-top: 1px solid darken(@white, 50%);
+  }
+  .copyright{
+    .pull-right;
+  }
 }
+
 
 /* ==========================================================================
    Media Queries

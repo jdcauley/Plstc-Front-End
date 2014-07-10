@@ -1,0 +1,147 @@
+<div id="scroll" class="scroll"></div>
+<nav class="main-nav" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"><h3>Plastic</h3></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling
+      <ul class="nav navbar-nav">
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<main class="home main">
+  <section class="hero hero-wrap">
+    <div class="hero hero-inner">
+        <div class="hero lead-copy">
+          <span id="everyday" class="everyday">Make Every Day,</span> <span id="payday" class="payday">a Payday</span>
+        </div>
+        <div class="mobile-copy">
+          <h1>Make Every Day, <span>A Payday</span></h1>
+        </div>
+        <form id="signup" class="sign-up-form" action="" method="post">
+          <h5>We're not quite ready, we'll let you know when we reach beta</h5>
+          <div class="input-wrapper">
+            <input id="email" class="input pre-sign-up email" pattern="[^ @]*@[^ @]*" type="email" name="email" value="" placeholder="Email" required>
+          </div>
+            <input id="submit" class="btn-submit" type="submit" value="Submit">
+        </form>
+        <span id="btn-action" class="btn-hero btn-action">Get Started</span>
+        <div id="form-success" class="form-success">Success! Thanks for Signing Up, We'll let you know as soon as we're ready.</div>
+        <div id="form-error" class="form-error">Wah Wah, something went wront. We're sorry about that and will work on it as soon as possible</div>
+
+    </div>
+  </section>
+  <section class="intro">
+    <div class="container">
+      <div class="payment payment-form-container">
+        <img class="logo" src="<%= site_url %>/assets/img/Twitpic.jpg">
+        <form class="payment payment-form" action="http://signup.plstc.co/signup" method="post">
+          <div class="input-wrapper">
+            <input id="amount" class="payment input amount" pattern="[\$0-9\.\0-9]*" type="currency" name="" value="" placeholder="Amount" required>
+          </div>
+          <div class="input-wrapper">
+            <input id="name" class="payment input name" type="text" name="" value="" placeholder="Full Name" required>
+          </div>
+          <div class="input-wrapper">
+            <input id="email" class="payment input email" pattern="[^ @]*@[^ @]*" type="text" name="" value="" placeholder="Email" required>
+          </div>
+          <div class="input-wrapper">
+            <input id="card" class="payment input card cc-number" x-autocompletetype="cc-number" type="text" name="" value="" placeholder="Card Number" required>
+          </div>
+          <div class="input-wrapper">
+            <input id="date" class="payment input date cc-exp" x-autocompletetype="cc-exp" placeholder="Expires MM/YY" type="text" name="" value="" required>
+          </div>
+          <div class="input-wrapper">
+            <input id="cvc" class="payment input cvc cc-cvc" x-autocompletetype="cc-csc" type="text" name="" value="" placeholder="CVC" required>
+          </div>
+          <div class="input-wrapper">
+            <input id="btn" class="btn" type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+      <div class="copy">
+        <header>
+          <h2>Better ways to get paid</h2>
+        </header>
+        <p>There is no reason to type in a credit card on every invoice. Users create an account that can be used with any Plastic checkout.</p>
+        <p>We make it easy to pay as a guest, login and pay with one-click or even authorize payment right from their email.</p>
+        <p>Make paying you, the easiest part of their day.</p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="price">Pick your Price</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5">
+          <h1 class="super-size"><span>$</span>5</h1>
+          <h5>per Month + Stripe Fees*</h5>
+        </div>
+        <div class="col-sm-2">
+          <h3 class="or">or</h3>
+        </div>
+        <div class="col-sm-5">
+          <h1 class="super-size">5<span>%</span></h1>
+          <h5>Stripe Fees + Plastic Fees</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <img class="poweredbystripe" src="<%= site_url %>/assets/img/outline.png">
+          <p class="small">Stripe Fee is 2.9% + 25&cent; | Plastic fee is 2.1%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-12">
+          <h1>Features</h1>
+        </div>
+
+        <div class="col-sm-6">
+          <ul class="feature-list">
+            <li>Sell Products, Take Donations or Send an Invoice</li>
+            <li>Accept Political Campaing Contibutions</li>
+            <li>Client Account Creation to Simplify Checkout</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6">
+          <ul class="feature-list">
+            <li>Customer Account Creation</li>
+            <li>Upload Custom Styles</li>
+            <li>Email Notifications for Invoices</li>
+            <li>Physical Goods or Digital Delivery</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 ">
+        <p class="copyright">&copy; 2014 - Jordan Cauley</p>
+      </div>
+    </div>
+  </div>
+</footer>

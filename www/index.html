@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plastic</title>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,200|Roboto:200,400,300,500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://gcwp.co/plstc//assets/css/app.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
     <link rel="alternate" type="application/rss+xml" title="Plastic RSS" href="/rss.xml">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
   </head>
   <body class="page-index">
 
@@ -20,56 +21,62 @@
       <a class="navbar-brand" href="/"><h3>Plastic</h3></a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Collect the nav links, forms, and other content for toggling
       <ul class="nav navbar-nav">
         <li><a href="#">FAQ</a></li>
         <li><a href="#">Login</a></li>
       </ul>
-
+    -->
   </div><!-- /.container-fluid -->
 </nav>
 
 <main class="home main">
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="container">
-        <div class="lead-copy">
+  <section class="hero hero-wrap">
+    <div class="hero hero-inner">
+        <div class="hero lead-copy">
           <span id="everyday" class="everyday">Make Every Day,</span> <span id="payday" class="payday">a Payday</span>
         </div>
         <div class="mobile-copy">
           <h1>Make Every Day, <span>A Payday</span></h1>
         </div>
-        <div class="btn-container">
-          <a id="btn-action" class="btn-hero btn-action" href="#">Get Started</a>
-        </div>
-      </div>
+        <form id="signup" class="sign-up-form" action="" method="post">
+          <h5>We're not quite ready, we'll let you know when we reach beta</h5>
+          <div class="input-wrapper">
+            <input id="email" class="input pre-sign-up email" pattern="[^ @]*@[^ @]*" type="email" name="email" value="" placeholder="Email" required>
+          </div>
+            <input id="submit" class="btn-submit" type="submit" value="Submit">
+        </form>
+        <span id="btn-action" class="btn-hero btn-action">Get Started</span>
+        <div id="form-success" class="form-success">Success! Thanks for Signing Up, We'll let you know as soon as we're ready.</div>
+        <div id="form-error" class="form-error">Wah Wah, something went wront. We're sorry about that and will work on it as soon as possible</div>
+
     </div>
   </section>
   <section class="intro">
     <div class="container">
       <div class="payment payment-form-container">
-        <img class="logo" src="http://gcwp.co/plstc//assets/img/Twitpic.jpg">
-        <form class="payment payment-form" action="mailto:jordan@cauley.co" method="post">
-          <div class="payment payment-input-wrapper">
-            <input id="amount" class="payment payment-input amount" pattern="[\$0-9\.\0-9]*" type="currency" name="" value="" placeholder="Amount" required>
+        <img class="logo" src="/assets/img/Twitpic.jpg">
+        <form class="payment payment-form" action="http://signup.plstc.co/signup" method="post">
+          <div class="input-wrapper">
+            <input id="amount" class="payment input amount" pattern="[\$0-9\.\0-9]*" type="currency" name="" value="" placeholder="Amount" required>
           </div>
-          <div class="payment payment-input-wrapper">
-            <input id="name" class="payment payment-input name" type="text" name="" value="" placeholder="Full Name" required>
+          <div class="input-wrapper">
+            <input id="name" class="payment input name" type="text" name="" value="" placeholder="Full Name" required>
           </div>
-          <div class="payment payment-input-wrapper">
-            <input id="email" class="payment payment-input email" pattern="[^ @]*@[^ @]*" type="text" name="" value="" placeholder="Email" required>
+          <div class="input-wrapper">
+            <input id="email" class="payment input email" pattern="[^ @]*@[^ @]*" type="text" name="" value="" placeholder="Email" required>
           </div>
-          <div class="payment payment-input-wrapper">
-            <input id="card" class="payment payment-input card cc-number" x-autocompletetype="cc-number" type="text" name="" value="" placeholder="Card Number" required>
+          <div class="input-wrapper">
+            <input id="card" class="payment input card cc-number" x-autocompletetype="cc-number" type="text" name="" value="" placeholder="Card Number" required>
           </div>
-          <div class="payment payment-input-wrapper">
-            <input id="date" class="payment payment-input date cc-exp" x-autocompletetype="cc-exp" placeholder="Expires MM/YY" type="text" name="" value="" required>
+          <div class="input-wrapper">
+            <input id="date" class="payment input date cc-exp" x-autocompletetype="cc-exp" placeholder="Expires MM/YY" type="text" name="" value="" required>
           </div>
-          <div class="payment payment-input-wrapper">
-            <input id="cvc" class="payment payment-input cvc cc-cvc" x-autocompletetype="cc-csc" type="text" name="" value="" placeholder="CVC" required>
+          <div class="input-wrapper">
+            <input id="cvc" class="payment input cvc cc-cvc" x-autocompletetype="cc-csc" type="text" name="" value="" placeholder="CVC" required>
           </div>
-          <div class="payment payment-input-wrapper">
-            <input id="btn" class="payment payment-input btn btn-default" type="submit" value="Submit" required>
+          <div class="input-wrapper">
+            <input id="btn" class="btn" type="submit" value="Submit">
           </div>
         </form>
       </div>
@@ -84,8 +91,14 @@
       </div>
     </div>
   </section>
+
   <section class="pricing">
     <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="price">Pick your Price</h1>
+        </div>
+      </div>
       <div class="row">
         <div class="col-sm-5">
           <h1 class="super-size"><span>$</span>5</h1>
@@ -99,45 +112,59 @@
           <h5>Stripe Fees + Plastic Fees</h5>
         </div>
       </div>
-      <div>
+      <div class="row">
         <div class="col-lg-12">
-          <h1 class="price">Pick your Price</h1>
-          <h4>Both plans come with all of these features</h4>
-          <hr>
-          <ul class="feature-list">
-            <li>Set a Price or Take Donations</li>
-            <li>Support for Political Campaign</li>
-            <li>Custom CSS for Payments Pages</li>
-            <li>Set the Submission Redirect</li>
-            <li>Simple Webhooks</li>
-            <li>Client Account Creation to Simplify Checkout</li>
-            <li>Create New Payment Forms via Email</li>
-            <li>Pay from your inbox</li>
-            <li><img class="poweredbystripe" src="http://gcwp.co/plstc//assets/img/outline.png"></li>
-          </ul>
-        </div>
-      </div>
-        <div class="asterisk">
+          <img class="poweredbystripe" src="/assets/img/outline.png">
           <p class="small">Stripe Fee is 2.9% + 25&cent; | Plastic fee is 2.1%</p>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-12">
+          <h1>Features</h1>
+        </div>
+
+        <div class="col-sm-6">
+          <ul class="feature-list">
+            <li>Sell Products, Take Donations or Send an Invoice</li>
+            <li>Accept Political Campaing Contibutions</li>
+            <li>Client Account Creation to Simplify Checkout</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6">
+          <ul class="feature-list">
+            <li>Customer Account Creation</li>
+            <li>Upload Custom Styles</li>
+            <li>Email Notifications for Invoices</li>
+            <li>Physical Goods or Digital Delivery</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
 </main>
+
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-sm-8 col-sm-offset-2">
-        <a href="#">Footer Link</a>
+      <div class="col-lg-12 ">
+        <p class="copyright">&copy; 2014 - Jordan Cauley</p>
       </div>
     </div>
   </div>
 </footer>
 
+    <script src="/assets/js/app.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+    <script src="/assets/js/parse.js" type="text/javascript" defer></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
-    <script src="http://gcwp.co/plstc//assets/js/transit.js"></script>
-    <script src="http://gcwp.co/plstc//assets/js/app.js"></script>
 
 
   </body>

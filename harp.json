@@ -3,7 +3,7 @@
   "globals": {
     "site_title": "Plastic",
     "twitter": "@useplastic",
-    "site_url": "http://localhost:9000",
+    "site_url": "",
     "disqus": {
       "show": false,
       "shortname": ""
